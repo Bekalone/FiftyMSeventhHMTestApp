@@ -8,7 +8,7 @@ class Math {
             result = "Отрицательное указывать нельзя"
         } else if (num1.isEmpty() || num2.isEmpty()) {
             result = "Пустоту прибавить нельзя"
-        } else if (num2.contains(".")) {
+        } else if (num1.contains(".") || num2.contains(".")) {
             result = (num1.toFloat() + num2.toFloat()).toString()
         } else if (num1.contains(Regex("[a-z]"))||num2.contains(Regex("[a-z]"))) {
             result = "Символ вводить нельзя"

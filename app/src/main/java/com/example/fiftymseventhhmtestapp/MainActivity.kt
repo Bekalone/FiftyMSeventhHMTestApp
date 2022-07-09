@@ -19,16 +19,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun initClicker() {
         with(binding){
-
+            val firstNum = etFirst.text.toString()
+            val secondNum = etSecond.text.toString()
+            val math = Math()
                 btnPlus.setOnClickListener {
-                    val firstNum = etFirst.text.toString()
-                    val secondNum = etSecond.text.toString()
-                    val math = Math()
                 tvResult.text = math.add(firstNum,secondNum)
             }
-            /*btnDivide.setOnClickListener {
+            btnDivide.setOnClickListener {
                 tvResult.text = math.divide(firstNum,secondNum)
-            }*/
+            }
         }
     }
 }
